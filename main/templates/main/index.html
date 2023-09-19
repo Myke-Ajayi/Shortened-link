@@ -1,0 +1,8 @@
+<form action="{% url 'main:shorten' url %}" method="post">
+    {% csrf_token %}
+
+    <fieldset>
+        <input type="text" name="url">
+    </fieldset>
+    <input type="submit" value="Shorten">
+</form>
